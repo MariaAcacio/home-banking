@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+	 <script src="./homebanking.js"></script>
+    <title>HOME BANKING</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div class="header">
+      <img class="logo" src="./img/logo.png"/>
+      <div class="align-left">
+        <span id="name">Welcome</span>
+        <img class="avatar" src="img/avatar.svg"/>
+      </div>
+    </div>
+    <div class="white-container">
+      <div class="menu-container">
+        <h1 class="your-account">Your account</h1>
+        <button class="links" onclick="extractMoney()">Extract money</button>
+        <button class="links" onclick="depositMoney()">Deposit money</button>
+        <button class="links" onclick="payForServices()">Pay for services</button>
+        <button class="links" onclick="transferMoney()">Transfer money</button>
+        <button class="links" onclick="changeExtractionLimit()">Change extraction limit</button>
+      </div>
+      <div class="green-container">
+        <div class="account-info">
+          <p>Balance in your account</p>
+          <h3 id="balance-account">$</h3>
+          <p id="extraction-limit">Your extraction limit is: </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
